@@ -1,5 +1,7 @@
-import jwt from 'jsonwebtoken';
-import { eq } from 'drizzle-orm';
+// import jwt from 'jsonwebtoken';
+// import { eq } from 'drizzle-orm';
+const {eq} = require("drizzle-orm");
+const {jwt}=require("jsonwebtoken");
 import db from '../config/db.js';
 import users from '../models/User.js';
 
