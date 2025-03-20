@@ -1,0 +1,57 @@
+[
+  {
+    "id": "dp-001",
+    "travel_date": "2024-02-27",
+    "tripTime": "morning",
+    "price": "250.00",
+    "paymentStatus": "completed",
+    "stopId": "stop-airport-03",
+    "routeId": "route-airport-01",
+    "userId": "ece-student1",
+    "isBooked": 1
+  },
+  {
+    "id": "dp-002",
+    "travel_date": "2024-02-27",
+    "tripTime": "evening",
+    "price": "250.00",
+    "paymentStatus": "completed",
+    "stopId": "stop-airport-03",
+    "routeId": "route-airport-01",
+    "userId": "ece-student2",
+    "isBooked": 1
+  },
+  {
+    "id": "dp-003",
+    "travel_date": "2024-02-28",
+    "tripTime": "morning",
+    "price": "250.00",
+    "paymentStatus": "completed",
+    "stopId": "stop-airport-03",
+    "routeId": "route-airport-01",
+    "userId": "ece-student3",
+    "isBooked": 1
+  },
+  {
+    "id": "dp-004",
+    "travel_date": "2024-02-28",
+    "tripTime": "evening",
+    "price": "250.00",
+    "paymentStatus": "completed",
+    "stopId": "stop-airport-03",
+    "routeId": "route-airport-01",
+    "userId": "ece-student4",
+    "isBooked": 1
+  },
+  {
+    "id": "dp-005",
+    "travel_date": "2025-02-28",
+    "tripTime": "morning",
+    "price": "250.00",
+    "paymentStatus": "completed",
+    "stopId": "stop-airport-03",
+    "routeId": "route-airport-01",
+    "userId": "ece-student4",
+    "isBooked": 0
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1740077108357,
+      "tag": "0000_slow_bucky",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1740095709593,
+      "tag": "0001_zippy_yellow_claw",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1740230521133,
+      "tag": "0002_curious_talon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1740322841122,
+      "tag": "0003_crazy_tempest",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1740329717541,
+      "tag": "0004_nifty_supreme_intelligence",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1740476824026,
+      "tag": "0005_icy_invaders",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1740647047742,
+      "tag": "0006_loving_menace",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1740652200520,
+      "tag": "0007_shiny_phalanx",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1740660902002,
+      "tag": "0008_secret_leader",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1740661047742,
+      "tag": "0009_fixed_mariko_yashida",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1741591599832,
+      "tag": "0010_burly_swordsman",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1741592221099,
+      "tag": "0011_clammy_mauler",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1741598664248,
+      "tag": "0012_minor_grandmaster",
+      "breakpoints": true
+    }
+  ]
+}

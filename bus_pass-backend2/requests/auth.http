@@ -1,0 +1,47 @@
+@host = http://localhost:5000
+@contentType = application/json
+
+### Register new student
+POST {{host}}/auth/signup
+Content-Type: {{contentType}}
+
+{
+    "name": "New Student",
+    "email": "newstudent4@example.com",
+    "password": "password123",
+    "role": "student",
+    "courseName": "CSE",
+    "semester": 3,
+    "phoneNo": "1234567890",
+    "dropoffAddress": "123 Main St, City"
+}
+
+### Login as student
+# @name login
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "newstudent2@example.com",
+    "password": "password123"
+}
+
+### Login as staff
+# @name login
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "staff@example.com",
+    "password": "password123"
+}
+
+### Login as admin
+# @name login
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}

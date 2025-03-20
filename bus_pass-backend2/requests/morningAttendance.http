@@ -1,0 +1,58 @@
+@host = http://localhost:5000
+@contentType = application/json
+
+### Login as admin to get token
+# @name loginAdmin
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}
+
+### Login as staff to get token
+# @name loginStaff
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "staff@example.com",
+    "password": "password123"
+}
+
+### Get all morning attendance records (Staff)
+GET {{host}}/morning-attendance
+Authorization: Bearer {{loginStaff.response.body.token}}
+
+### Get morning attendance by ID (Staff)
+GET {{host}}/morning-attendance/306773c9-2eeb-4649-a1f7-58f20552ab4e
+Authorization: Bearer {{loginStaff.response.body.token}}
+
+### Create morning attendance record (Staff)
+POST {{host}}/morning-attendance
+Content-Type: {{contentType}}
+Authorization: Bearer {{loginStaff.response.body.token}}
+
+{
+    "date": "2024-01-20",
+    "routeId": "df9bf339-c1cd-438e-b27c-0b6875ba71d3",
+    "busId": "b4db31a7-07db-4b08-8af6-782c843251d8",
+    "count": 45
+}
+
+### Update morning attendance record (Staff)
+PUT {{host}}/morning-attendance/attendance-id-here
+Content-Type: {{contentType}}
+Authorization: Bearer {{loginStaff.response.body.token}}
+
+{
+    "date": "2024-01-20",
+    "routeId": "route-id-here",
+    "busId": "bus-id-here",
+    "count": 50
+}
+
+### Delete morning attendance record (Staff)
+DELETE {{host}}/morning-attendance/5d7aee8c-18a3-481d-98e0-45f62ee4d2ba
+Authorization: Bearer {{loginStaff.response.body.token}}

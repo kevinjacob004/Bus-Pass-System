@@ -1,0 +1,184 @@
+[
+  {
+    "id": "route-city-01",
+    "routeName": "PANAMPILLY NAGAR TO CAMPUS (Via VYTTILA)",
+    "stops": [
+      {
+        "name": "Kairali Apt.(Panampilly Nagar)",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Manorama Junction",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "Vyttila",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  },
+  {
+    "id": "route-airport-01",
+    "routeName": "KUMBALAM TOLL‐VYTTILA‐ TO CAMPUS",
+    "stops": [
+      {
+        "name": "Kumbalam Toll",
+        "alternateNames": "KSR Station",
+        "fareInRupees": 60,
+        "lat": 12.9766,
+        "lon": 77.5713
+      },
+      {
+        "name": "Shappumpadi",
+        "fareInRupees": 45,
+        "lat": 13.0358,
+        "lon": 77.5970
+      },
+      {
+        "name": "Madavana(Fisheries)",
+        "alternateNames": "KIAL Terminal",
+        "fareInRupees": 30,
+        "lat": 13.1989,
+        "lon": 77.7068
+      }
+    ]
+  },
+  {
+    "id": "route-cit-01",
+    "routeName": "HIGH COURT TO CAMPUS( Via KALOOR)",
+    "stops": [
+      {
+        "name": "High Court",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Kacheripady",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "North",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  },
+  {
+    "id": "route-ci-01",
+    "routeName": "TRIPPUNITHURA TO CAMPUS(Via IRIMPANAM)",
+    "stops": [
+      {
+        "name": "Trippunithura Pvt.Stand",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Vdakke Kotta",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "S.N. Junction",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  },
+  {
+    "id": "route-c-01",
+    "routeName": "KOONAMMAVU TO CAMPUS(Via ALUVA PARAVUR JN.)",
+    "stops": [
+      {
+        "name": "Koonammavu",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Kochal",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "Athani",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  },
+  {
+    "id": "route-cvt-01",
+    "routeName": "8 MANNUTHY (Via CHALAKUDY) TO CAMPUS",
+    "stops": [
+      {
+        "name": "Mannuthy",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Kuttanellore Byepass",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "Puzhampallam",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  },
+  {
+    "id": "route-cvty-01",
+    "routeName": "KOTTAPADY (Via NEELISWARAM) TO CAMPUS",
+    "stops": [
+      {
+        "name": "Kottapady(Cheranganal Junction)",
+        "alternateNames": "Main Station",
+        "fareInRupees": 60,
+        "lat": 12.9716,
+        "lon": 77.5946
+      },
+      {
+        "name": "Payyal",
+        "alternateNames": "Mahatma Gandhi Road",
+        "fareInRupees": 55,
+        "lat": 12.9753,
+        "lon": 77.6095
+      },
+      {
+        "name": "Kuttikuzhy",
+        "fareInRupees": 45,
+        "lat": 12.9784,
+        "lon": 77.6408
+      }
+    ]
+  }
+]

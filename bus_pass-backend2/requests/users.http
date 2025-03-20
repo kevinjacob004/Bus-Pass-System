@@ -1,0 +1,60 @@
+@baseUrl = http://localhost:5000
+@authToken = {{login.response.body.data.token}}
+
+### Login as admin to get token
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}
+
+### Get all users
+GET {{baseUrl}}/users
+Authorization: Bearer {{authToken}}
+
+### Get all users
+GET {{baseUrl}}/users?role=staff
+Authorization: Bearer {{authToken}}
+
+### Get user by ID
+GET {{baseUrl}}/users/some-user-id
+Authorization: Bearer {{authToken}}
+
+### Create new user
+POST {{baseUrl}}/users
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "New Student4",
+    "email": "newstudent4@example.com",
+    "password": "password123",
+    "role": "student",
+    "isDayScholar": true,
+    "courseName": "CSE",
+    "semester": 3,
+    "phoneNo": "1234567890",
+    "dropoffAddress": "123 Student St, City"
+}
+
+### Update user
+PUT {{baseUrl}}/users/3e1021d7-abad-461c-baaa-c309a339f121
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Updated Name",
+    "email": "updated2@example.com",
+    "courseName": "ECE",
+    "semester": 4,
+    "phoneNo": "9876543210",
+    "role": "student",
+    "dropoffAddress": "456 Updated St, City"
+}
+
+### Delete user
+DELETE {{baseUrl}}/users/91b09129-3bae-48c5-95eb-78cd0bc0058c
+Authorization: Bearer {{authToken}}

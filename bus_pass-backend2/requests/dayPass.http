@@ -1,0 +1,51 @@
+@baseUrl = http://localhost:5000
+@contentType = application/json
+
+### Login as student to get token
+# @name loginStudent
+POST {{baseUrl}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "ece.student2@example.com",
+    "password": "password123"
+}
+
+### Login as admin to get token
+# @name loginAdmin
+POST {{baseUrl}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}
+
+### Create day pass booking (Student)
+POST {{baseUrl}}/day-passes/booking 
+Content-Type: {{contentType}}
+Authorization: Bearer {{loginStudent.response.body.token}}
+
+{
+    "travelDate": "2024-02-02",
+    "tripTime": "morning",
+    "stopId": "stop-city-01",
+    "routeId": "route-city-01",
+    "price": 50
+}
+
+### Confirm booking payment (Student)
+PUT {{baseUrl}}/day-passes/confirm/a79233dd-495e-4bb7-856f-86b7b202d24d
+Authorization: Bearer {{loginStudent.response.body.token}}
+
+### Get my daily passes (Student)
+GET {{baseUrl}}/day-passes/my-passes
+Authorization: Bearer {{loginStudent.response.body.token}}
+
+### Get all daily passes (Admin/Staff only)
+GET {{baseUrl}}/day-passes
+Authorization: Bearer {{loginAdmin.response.body.token}}
+
+### Get daily pass by ID 
+GET {{baseUrl}}/day-passes/f71e19ff-904b-42be-a774-02f979d21271
+Authorization: Bearer {{loginStudent.response.body.token}}

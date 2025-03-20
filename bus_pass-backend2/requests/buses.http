@@ -1,0 +1,60 @@
+@host = http://localhost:5000
+@contentType = application/json
+
+### Login as admin to get token
+# @name login
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "staff@example.com",
+    "password": "password123"
+}
+
+### Add a new bus
+POST {{host}}/buses
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "busNo": 14,
+    "busRegistrationNo": "KL-01-D-4561",
+    "maxSeatCapacity": 30,
+    "routeId": "7af2d97e-703d-4de2-aa0d-d3373046dba0"
+}
+
+### Get all buses
+GET {{host}}/buses
+Authorization: Bearer {{login.response.body.token}}
+
+### Get bus by ID
+GET {{host}}/buses/9a4030ec-800c-4522-ac36-a9bc79e723bf
+Authorization: Bearer {{login.response.body.token}}
+
+### Get bus seat status by ID
+GET {{host}}/buses/9a4030ec-800c-4522-ac36-a9bc79e723bf/seats?tripTime=morning&travelDate=2025-02-28
+Authorization: Bearer {{login.response.body.token}}
+
+### Update bus
+PUT {{host}}/buses/daf827bd-09a5-47c0-b0a0-85f6aaa57cd7
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "busNo": 42,
+    "busRegistrationNo": "KL-01-D-3486",
+    "maxSeatCapacity": 50,
+    "routeId": "6cdd513d-6370-4162-9714-477c3e02cf8a"
+}
+
+### Delete bus
+DELETE {{host}}/buses/bus-id-here
+Authorization: Bearer {{login.response.body.token}}
+
+### Get daily pass count
+GET {{host}}/daily_pass/count?routeId=route-airport-01&is_booked=1&trip_time=morning&travelDate=2025-02-27
+Authorization: Bearer {{login.response.body.token}}
+
+### Bus Search
+GET {{host}}/buses/search?searchTerm=KIAL
+Authorization: Bearer {{login.response.body.token}}

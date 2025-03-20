@@ -1,0 +1,48 @@
+[
+  {
+    "routeName": "City Center to University",
+    "stops": [
+      {
+        "stopName": "City Center Bus Stand",
+        "alternateStopName": "Main Bus Terminal",
+        "fareInRupees": 0
+      },
+      {
+        "stopName": "Market Junction",
+        "fareInRupees": 10
+      },
+      {
+        "stopName": "Hospital Road",
+        "alternateStopName": "Medical College",
+        "fareInRupees": 15
+      },
+      {
+        "stopName": "University Gate",
+        "fareInRupees": 20
+      }
+    ]
+  },
+  {
+    "routeName": "Suburban Route",
+    "stops": [
+      {
+        "stopName": "Railway Station",
+        "fareInRupees": 0
+      },
+      {
+        "stopName": "Tech Park",
+        "alternateStopName": "IT Hub",
+        "fareInRupees": 12
+      },
+      {
+        "stopName": "Shopping Mall",
+        "fareInRupees": 18
+      },
+      {
+        "stopName": "University Campus",
+        "alternateStopName": "College Stop",
+        "fareInRupees": 25
+      }
+    ]
+  }
+]

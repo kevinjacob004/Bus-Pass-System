@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:5000
+@contentType = application/json
+
+### Login as admin to get token
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}
+
+### Get all off days
+GET {{baseUrl}}/off-days
+Authorization: Bearer {{login.response.body.token}}
+
+### Create ECE 6th semester off day
+POST {{baseUrl}}/off-days
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "semester": 6,
+    "branch": "ECE",
+    "offDate": "2024-01-16"
+}
+
+### Create CSE 3rd semester off day
+POST {{baseUrl}}/off-days
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "semester": 3,
+    "branch": "CSE",
+    "offDate": "2025-02-28"
+}
+
+### Get bus seats status to test off day calculations
+GET {{baseUrl}}/buses/1/seats-status?tripTime=morning&travelDate=2024-01-16
+Authorization: Bearer {{login.response.body.token}}

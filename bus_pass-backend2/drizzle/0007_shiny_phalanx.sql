@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD `is_day_scholar` int DEFAULT 0;

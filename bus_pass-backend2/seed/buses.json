@@ -1,0 +1,50 @@
+[
+  {
+    "busNo": 1,
+    "busRegistrationNo": "KL-01-A-1234",
+    "maxSeatCapacity": 45,
+    "routeId": "route-city-01"
+  },
+  {
+    "busNo": 2,
+    "busRegistrationNo": "KL-01-B-5678",
+    "maxSeatCapacity": 50,
+    "routeId": "route-airport-01"
+  },
+  {
+    "busNo": 3,
+    "busRegistrationNo": "KL-01-A-1235",
+    "maxSeatCapacity": 45,
+    "routeId": "route-cit-01"
+  },
+  {
+    "busNo": 4,
+    "busRegistrationNo": "KL-01-A-1236",
+    "maxSeatCapacity": 45,
+    "routeId": "route-ci-01"
+  },
+  {
+    "busNo": 5,
+    "busRegistrationNo": "KL-01-A-1237",
+    "maxSeatCapacity": 45,
+    "routeId": "route-c-01"
+  },
+  {
+    "busNo": 6,
+    "busRegistrationNo": "KL-01-A-1284",
+    "maxSeatCapacity": 45,
+    "routeId": "route-cv-01"
+  },
+  {
+    "busNo": 7,
+    "busRegistrationNo": "KL-01-A-1934",
+    "maxSeatCapacity": 45,
+    "routeId": "route-cvt-01"
+  },
+  {
+    "busNo": 8,
+    "busRegistrationNo": "KL-01-A-7634",
+    "maxSeatCapacity": 45,
+    "routeId": "route-cvty-01"
+  }
+]

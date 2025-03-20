@@ -1,0 +1,85 @@
+@host = http://localhost:5000
+@contentType = application/json
+
+### Login as admin to get token
+# @name login
+POST {{host}}/auth/login
+Content-Type: {{contentType}}
+
+{
+    "email": "admin@example.com",
+    "password": "password123"
+}
+
+### Search route stops by name or alternate names
+GET {{host}}/route-stops/search?searchTerm=Central
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+### Add a new route
+POST {{host}}/routes
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "routeName": "City Center Express",
+    "stops": [
+        {
+            "name": "Central Station",
+            "alternateNames": "Main Station",
+            "fareInRupees": 0,
+            "lat": 12.9716,
+            "lon": 77.5946
+        },
+        {
+            "name": "MG Road",
+            "alternateNames": "Mahatma Gandhi Road",
+            "fareInRupees": 15,
+            "lat": 12.9753,
+            "lon": 77.6095
+        },
+        {
+            "name": "Indiranagar",
+            "fareInRupees": 25,
+            "lat": 12.9784,
+            "lon": 77.6408
+        }
+    ]
+}
+
+### Get all routes
+GET {{host}}/routes
+Authorization: Bearer {{login.response.body.token}}
+
+### Get route by ID
+GET {{host}}/routes/route-airport-01
+Authorization: Bearer {{login.response.body.token}}
+
+### Update route
+PUT {{host}}/routes/afaddd82-27d7-4dfe-8621-7fb047058b73
+Content-Type: {{contentType}}
+Authorization: Bearer {{login.response.body.token}}
+
+{
+    "routeName": "Updated City Center Express2",
+    "stops": [
+        {
+            "name": "Central Station Updated",
+            "alternateNames": "Main Station Updated",
+            "fareInRupees": 0,
+            "lat": 12.9716,
+            "lon": 77.5946
+        },
+        {
+            "name": "MG Road",
+            "alternateNames": "Mahatma Gandhi Road",
+            "fareInRupees": 20,
+            "lat": 12.9753,
+            "lon": 77.6095
+        }
+    ]
+}
+
+### Delete route
+DELETE {{host}}/routes/afaddd82-27d7-4dfe-8621-7fb047058b73
+Authorization: Bearer {{login.response.body.token}}
