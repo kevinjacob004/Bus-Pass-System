@@ -1,5 +1,6 @@
-import { eq, and, count, inArray, or, like } from "drizzle-orm";
-import { v4 as uuidv4 } from "uuid";
+// import { eq, and, count, inArray, or, like } from "drizzle-orm";
+// import { v4 as uuidv4 } from "uuid";
+const {eq, and, count, inArray, or, like} = require("drizzle-orm");
 import db from "../config/db.js";
 import Bus from "../models/Bus.js";
 import Route from "../models/Route.js";
