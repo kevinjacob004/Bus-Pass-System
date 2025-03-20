@@ -5,8 +5,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "node server.js",
     "seeddb": "node seed/seeder.js",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
