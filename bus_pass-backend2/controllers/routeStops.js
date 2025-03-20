@@ -1,11 +1,13 @@
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 import db from '../config/db.js';
 import Route from '../models/Route.js';
 import RouteStop from '../models/RouteStop.js';
-import { eq, or, like } from 'drizzle-orm';
+// import { eq, or, like } from 'drizzle-orm';
 import Bus from '../models/Bus.js';
 import User from '../models/User.js';
 import DailyPass from '../models/DailyPass.js';
+const { eq, or,like }  = require("drizzle-orm");
+const { v4: uuidv4 } = require("uuid");
 
 export const searchRouteStops = async (req, res) => {
     const searchTerm = req.query.searchTerm; 
