@@ -1,10 +1,11 @@
-import bcrypt from "bcryptjs";
+// import bcrypt from "bcryptjs";
+
 import jwt from "jsonwebtoken";
 import { eq } from "drizzle-orm";
 import { v4 as uuidv4 } from "uuid";
 import db from "../config/db.js";
 import users from "../models/User.js";
-
+const bcrypt = require("bcryptjs");
 export const signup = async (req, res) => {
   try {
     const {
