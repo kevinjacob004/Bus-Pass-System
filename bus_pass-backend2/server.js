@@ -1,8 +1,6 @@
-//import 'dotenv/config';
-//const express = require('express');
-const express = require('express');
-const cors = require('cors');
-//import cors from 'cors';
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
 import { errorHandler } from './middleware/error.js';
 import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
@@ -12,10 +10,6 @@ import routeStopsRoutes from './routes/routeStops.js';
 import morningAttendanceRoutes from './routes/morningAttendance.js';
 import offDaysRoutes from './routes/offDays.js';
 import dailyPassesRoutes from './routes/dailyPasses.js';
-const dotenv = require("dotenv");
-
-// import dotenv from 'dotenv';
-dotenv.config();
 
 const app = express();
 

@@ -1,4 +1,4 @@
-const express = require('express');
+import express from "express";
 import { protect, authorize } from '../middleware/auth.js';
 import { searchRouteStops, deleteRouteStop } from '../controllers/routeStops.js';
 const router = express.Router();

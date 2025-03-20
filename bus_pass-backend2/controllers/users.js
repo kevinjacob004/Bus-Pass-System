@@ -1,11 +1,9 @@
-// import { eq, sql } from "drizzle-orm";
-// import { v4 as uuidv4 } from "uuid";
-const { eq, sql } = require("drizzle-orm");
-const { v4: uuidv4 } = require("uuid");
+import { eq, sql } from "drizzle-orm";
+import { v4 as uuidv4 } from "uuid";
+import bcrypt from "bcryptjs";
 import db from "../config/db.js";
 import users from "../models/User.js";
 import { getPaginationData, getPaginationParams } from "../utils/pagination.js";
-const bcrypt = require("bcryptjs");
 
 export const getAllUsers = async (req, res) => {
   try {

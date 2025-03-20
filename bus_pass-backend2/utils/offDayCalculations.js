@@ -1,5 +1,4 @@
-// import { eq, and, count } from 'drizzle-orm';
-const {eq, and, count  } = require("drizzle-orm");
+import { eq, and, count } from 'drizzle-orm';
 import db from '../config/db.js';
 import OffDays from '../models/OffDays.js';
 import User from '../models/User.js';

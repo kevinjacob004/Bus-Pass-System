@@ -1,11 +1,9 @@
-// import { eq } from 'drizzle-orm';
-const {eq} = require("drizzle-orm");
-const {v4: uuidv4}=require("uuid");
+import { eq } from 'drizzle-orm';
 import  db from '../config/db.js';
 import MorningAttendance from '../models/MorningAttendance.js';
 import Route from '../models/Route.js';
 import Bus from '../models/Bus.js';
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 // @desc    Get all morning attendance records
 // @route   GET /api/morning-attendance

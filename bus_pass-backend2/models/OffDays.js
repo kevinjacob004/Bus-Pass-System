@@ -1,5 +1,4 @@
-// import { mysqlTable, varchar, date, int, mysqlEnum } from 'drizzle-orm/mysql-core';
-const { mysqlTable, varchar,  date, int, mysqlEnum } = require("drizzle-orm/mysql-core");
+import { mysqlTable, varchar, date, int, mysqlEnum } from 'drizzle-orm/mysql-core';
 import { BRANCHES } from '../utils/constants.js';
 
 const OffDays = mysqlTable('off_days', {

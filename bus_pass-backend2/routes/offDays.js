@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 import { getAllOffDays, getOffDayById, createOffDay, updateOffDay, deleteOffDay } from '../controllers/offDays.js';
 import { protect, authorize } from '../middleware/auth.js';
 

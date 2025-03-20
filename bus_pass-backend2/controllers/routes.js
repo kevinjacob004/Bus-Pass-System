@@ -1,7 +1,5 @@
-// import { eq, and, notInArray, isNull, not, inArray } from 'drizzle-orm';
-// import { v4 as uuidv4 } from 'uuid';
-const { eq, and, notInArray, isNull, not, inArray }  = require("drizzle-orm");
-const { v4: uuidv4 } = require("uuid");
+import { eq, and, notInArray, isNull, not, inArray } from 'drizzle-orm';
+import { v4 as uuidv4 } from 'uuid';
 import db from '../config/db.js';
 import Route from '../models/Route.js';
 import RouteStop from '../models/RouteStop.js';

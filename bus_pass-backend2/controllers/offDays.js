@@ -1,9 +1,7 @@
 import db from '../config/db.js';
-// import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 import OffDays from '../models/OffDays.js';
-// import { eq } from 'drizzle-orm';
-const eq = require("drizzle-orm");
-const { v4: uuidv4 } = require("uuid");
+import { eq } from 'drizzle-orm';
 
 export const getAllOffDays = async (req, res) => {
   try {

@@ -1,10 +1,6 @@
-// import { execSync } from 'child_process';
-// import mysql from 'mysql2/promise';
-// import dotenv from 'dotenv';
-const { execSync }  = require("child_process");
-const { mysql } = require("mysql2/promise");
-const { dotenv } = require("dotenv");
-
+import { execSync } from 'child_process';
+import mysql from 'mysql2/promise';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
