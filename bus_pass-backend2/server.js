@@ -1,4 +1,4 @@
-import 'dotenv/config';
+//import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { errorHandler } from './middleware/error.js';
@@ -10,6 +10,8 @@ import routeStopsRoutes from './routes/routeStops.js';
 import morningAttendanceRoutes from './routes/morningAttendance.js';
 import offDaysRoutes from './routes/offDays.js';
 import dailyPassesRoutes from './routes/dailyPasses.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 
