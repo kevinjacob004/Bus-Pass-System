@@ -1,4 +1,5 @@
-import { mysqlTable, varchar, timestamp } from 'drizzle-orm/mysql-core';
+// import { mysqlTable, varchar, timestamp } from 'drizzle-orm/mysql-core';
+const { mysqlTable, varchar, timestamp } = require("drizzle-orm/mysql-core");
 
 const Route = mysqlTable('routes', {
   id: varchar('id', { length: 36 }).primaryKey(),

@@ -1,4 +1,5 @@
-import { mysqlTable, varchar, date, int } from 'drizzle-orm/mysql-core';
+// import { mysqlTable, varchar, date, int } from 'drizzle-orm/mysql-core';
+const { mysqlTable, varchar,  date, int} = require("drizzle-orm/mysql-core");
 import Route from './Route.js';
 import Bus from './Bus.js';
 

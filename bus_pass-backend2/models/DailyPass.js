@@ -1,12 +1,14 @@
-import {
-  mysqlTable,
-  int,
-  date,
-  timestamp,
-  varchar,
-  decimal,
-  boolean,
-} from "drizzle-orm/mysql-core";
+// import {
+//   mysqlTable,
+//   int,
+//   date,
+//   timestamp,
+//   varchar,
+//   decimal,
+//   boolean,
+// } from "drizzle-orm/mysql-core";
+
+const { mysqlTable,int, date, timestamp,varchar,decimal,boolean, } = require("drizzle-orm/mysql-core");
 import RouteStop from "./RouteStop.js";
 import User from "./User.js";
 import Route from "./Route.js";
