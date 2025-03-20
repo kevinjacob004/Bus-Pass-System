@@ -17,7 +17,7 @@ const MyBookings = () => {
   useEffect(() => {
     const fetchBookingHistory = async () => {
       try {
-        const response = await fetch("http://localhost:5000/day-passes/my-passes", {
+        const response = await fetch("https://bus-pass-system-uysw.onrender.com/day-passes/my-passes", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

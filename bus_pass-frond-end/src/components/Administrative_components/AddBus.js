@@ -31,7 +31,7 @@ const AddBus = () => {
   // Function to fetch routes from API
   const fetchRoutes = async () => {
     try {
-      const response = await fetch("http://localhost:5000/routes", {
+      const response = await fetch("https://bus-pass-system-uysw.onrender.com/routes", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const AddBus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/buses", {
+      const response = await fetch("https://bus-pass-system-uysw.onrender.com/buses", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

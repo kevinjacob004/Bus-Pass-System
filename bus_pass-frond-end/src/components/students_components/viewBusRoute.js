@@ -33,7 +33,7 @@ const BusRoute = () => {
     console.log("User token:", token); // Debugging
     const fetchBusDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/buses/${busId}`, {
+        const response = await fetch(`https://bus-pass-system-uysw.onrender.com/buses/${busId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`, // Pass token in header
@@ -69,7 +69,7 @@ const BusRoute = () => {
 
     const fetchRouteDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/routes/${bus.routeId}`, {
+        const response = await fetch(`https://bus-pass-system-uysw.onrender.com/routes/${bus.routeId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

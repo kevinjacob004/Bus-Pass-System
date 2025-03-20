@@ -34,7 +34,7 @@ const AddOffDay = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/off-days", {
+            const response = await fetch("https://bus-pass-system-uysw.onrender.com/off-days", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

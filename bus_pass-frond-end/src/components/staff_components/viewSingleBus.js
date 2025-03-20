@@ -29,7 +29,7 @@ const ViewSingleBus = () => {
     console.log("User token:", token); // Debugging
     const fetchBusDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/buses/${busId}`, {
+        const response = await fetch(`https://bus-pass-system-uysw.onrender.com/buses/${busId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`, // Pass token in header
@@ -61,7 +61,7 @@ const ViewSingleBus = () => {
 
     const fetchRouteDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/routes/${bus.routeId}`, {
+        const response = await fetch(`https://bus-pass-system-uysw.onrender.com/routes/${bus.routeId}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
@@ -108,7 +108,7 @@ const ViewSingleBus = () => {
     try {
       const token = sessionStorage.getItem("authToken");
 
-      const response = await fetch("http://localhost:5000/morning-attendance", {
+      const response = await fetch("https://bus-pass-system-uysw.onrender.com/morning-attendance", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

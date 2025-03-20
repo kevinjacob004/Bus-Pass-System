@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:5000
+@baseUrl = https://bus-pass-system-uysw.onrender.com
 @contentType = application/json
 
 ### Login as admin to get token

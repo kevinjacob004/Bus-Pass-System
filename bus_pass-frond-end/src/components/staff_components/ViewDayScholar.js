@@ -26,7 +26,7 @@ const ViewDayScolars = () => {
       console.log("User token:role", token, role);
 
       try {
-        const response = await fetch("http://localhost:5000/users?role=student", {
+        const response = await fetch("https://bus-pass-system-uysw.onrender.com/users?role=student", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -59,7 +59,7 @@ const ViewDayScolars = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/users/${dayScholarid}`, {
+      const response = await fetch(`https://bus-pass-system-uysw.onrender.com/users/${dayScholarid}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

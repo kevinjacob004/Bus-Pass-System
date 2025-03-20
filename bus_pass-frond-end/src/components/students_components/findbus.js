@@ -39,7 +39,7 @@ const FindBus = () => {
     if (query.length < 2) return;
     try {
       const token = sessionStorage.getItem("authToken");
-      const response = await fetch(`http://localhost:5000/buses/search?searchTerm=${query}`, {
+      const response = await fetch(`https://bus-pass-system-uysw.onrender.com/buses/search?searchTerm=${query}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await response.json();
@@ -67,7 +67,7 @@ const FindBus = () => {
     try {
       const token = sessionStorage.getItem("authToken");
       const response = await fetch(
-        `http://localhost:5000/buses/${busId}/seats?tripTime=${tripTime}&travelDate=${date}`,
+        `https://bus-pass-system-uysw.onrender.com/buses/${busId}/seats?tripTime=${tripTime}&travelDate=${date}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

@@ -1,4 +1,4 @@
-@host = http://localhost:5000
+@host = https://bus-pass-system-uysw.onrender.com
 @contentType = application/json
 
 ### Register new student

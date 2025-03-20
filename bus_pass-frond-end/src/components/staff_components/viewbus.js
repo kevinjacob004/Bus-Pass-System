@@ -27,7 +27,7 @@ const BusView = () => {
       console.log("User token:", token); // Debugging
 
       try {
-        const response = await fetch("http://localhost:5000/buses", {
+        const response = await fetch("https://bus-pass-system-uysw.onrender.com/buses", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const BusView = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/buses/${busid}`, {
+      const response = await fetch(`https://bus-pass-system-uysw.onrender.com/buses/${busid}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

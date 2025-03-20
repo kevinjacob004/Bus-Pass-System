@@ -25,7 +25,7 @@ const Checkout = () => {
 
   useEffect(() => {
     if (userId) {
-      fetch(`http://localhost:5000/users/${userId}`)
+      fetch(`https://bus-pass-system-uysw.onrender.com/users/${userId}`)
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
@@ -46,7 +46,7 @@ const Checkout = () => {
   const confirmBooking = async (bookingId) => {
     try {
       const confirmResponse = await fetch(
-        `http://localhost:5000/day-passes/confirm/${bookingId}`,
+        `https://bus-pass-system-uysw.onrender.com/day-passes/confirm/${bookingId}`,
         {
           method: "PUT",
           headers: {
@@ -89,7 +89,7 @@ const Checkout = () => {
   //   console.log("Booking data being sent:", bookingData);
 
   //   try {
-  //     const response = await fetch("http://localhost:5000/day-passes/booking", {
+  //     const response = await fetch("https://bus-pass-system-uysw.onrender.com/day-passes/booking", {
   //       method: "POST",
   //       headers: {
   //         "Content-Type": "application/json",
@@ -171,7 +171,7 @@ const Checkout = () => {
     console.log("Booking data being sent:", bookingData);
 
     try {
-      const response = await fetch("http://localhost:5000/day-passes/booking", {
+      const response = await fetch("https://bus-pass-system-uysw.onrender.com/day-passes/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

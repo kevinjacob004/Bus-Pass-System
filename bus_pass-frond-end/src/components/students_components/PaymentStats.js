@@ -21,7 +21,7 @@ const PaymentStats = () => {
     const fetchBookingDetails = async () => {
       if (!bookingId) return;
       try {
-        const response = await fetch(`http://localhost:5000/day-passes/${bookingId}`, {
+        const response = await fetch(`https://bus-pass-system-uysw.onrender.com/day-passes/${bookingId}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

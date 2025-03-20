@@ -49,7 +49,7 @@ const AddRoute = () => {
         const routeData = { routeName, stops };
 
         try {
-            const response = await fetch("http://localhost:5000/routes", {
+            const response = await fetch("https://bus-pass-system-uysw.onrender.com/routes", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

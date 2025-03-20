@@ -26,7 +26,7 @@ const ViewAllStaff = () => {
       console.log("User token:role", token, role);
 
       try {
-        const response = await fetch("http://localhost:5000/users?role=staff", {
+        const response = await fetch("https://bus-pass-system-uysw.onrender.com/users?role=staff", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -59,7 +59,7 @@ const ViewAllStaff = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/users/${staffId}`, {
+      const response = await fetch(`https://bus-pass-system-uysw.onrender.com/users/${staffId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

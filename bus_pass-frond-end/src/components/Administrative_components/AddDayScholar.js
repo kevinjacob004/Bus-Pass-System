@@ -39,7 +39,7 @@ const AddDayScholar = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/users", {
+      const response = await fetch("https://bus-pass-system-uysw.onrender.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
