@@ -1,5 +1,7 @@
-import { eq, and } from "drizzle-orm";
-import { v4 as uuidv4 } from "uuid";
+// import { eq, and } from "drizzle-orm";
+// import { v4 as uuidv4 } from "uuid";
+const {eq, and} = require("drizzle-orm");
+const {v4: uuidv4}=require("uuid");
 import db from "../config/db.js";
 import DailyPass from "../models/DailyPass.js";
 import Bus from "../models/Bus.js";
