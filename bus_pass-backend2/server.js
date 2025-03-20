@@ -1,5 +1,6 @@
 //import 'dotenv/config';
-import express from 'express';
+//import express from 'express';
+const express = require('express');
 import cors from 'cors';
 import { errorHandler } from './middleware/error.js';
 import authRoutes from './routes/auth.js';
