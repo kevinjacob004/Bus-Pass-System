@@ -2,7 +2,6 @@
   "name": "bus-backend",
   "version": "1.0.0",
   "description": "Express.js application with JWT authentication",
-  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
