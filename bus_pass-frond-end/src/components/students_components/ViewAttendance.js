@@ -25,19 +25,19 @@ const ViewAttendance = () => {
           </div>
           <nav className="flex space-x-4 sm:space-x-6 text-gray-600">
             <a
-              href="#"
+              href="#home"
               className="hover:text-blue-600 text-sm sm:text-base font-medium"
             >
               Home
             </a>
             <a
-              href="#"
+              href="#mybooking"
               className="hover:text-blue-600 text-sm sm:text-base font-medium"
             >
               Mybookings
             </a>
             <a
-              href="#"
+              href="#contact"
               className="hover:text-blue-600 text-sm sm:text-base font-medium"
             >
               Contact
